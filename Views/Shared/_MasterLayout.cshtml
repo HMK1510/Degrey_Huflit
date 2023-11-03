@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script src="https://kit.fontawesome.com/b115215386.js" crossorigin="anonymous"></script>
+    <link href="~/Content/LayoutStyle.css" rel="stylesheet" />
+    <script defer src="~/Scripts/HomeScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="flex-container-header">
+                <div class="header-wrap-logo">
+                    <div class="wrap-logo-text-left">
+                        <a href="http://localhost:57633/TrangChu/Index"><img style="width:86px;height:70px;display:block;vertical-align:middle;" src="https://file.hstatic.net/1000281824/file/tote-1_33445b051a404bb790b6d0df0275ac8d.png" /></a>
+                    </div>
+                </div>
+
+                <div class="header-wrap-main">
+                    <ul class="menu-main">
+                        <li class="i-active" style="height:90px"><a class="main-items-link" href="~/TrangChu/Index">Trang chủ</a></li>
+                        <li style="height:90px"><a class="main-items-link" href="~/Product/ProductPageTest">Sản phẩm</a></li>
+                        <li style="height:90px"><a class="main-items-link" href="~/Store/StorePageTest">Store</a></li>
+                        <li style="height:90px"><a class="main-items-link" href="~/About/AboutPageTest">Giới thiệu</a></li>
+                    </ul>
+                </div>
+
+                <div class="header-wrap-search">
+                    <div class="header-search">
+                        <div class="search-box-wrapper">
+                            <form class="search-form">
+                                <button class="search-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <div class="inner-search">
+                                    <input class="search-text" type="text" placeholder="Tìm kiếm sản phẩm..." />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-wrap-cart">
+                    <div class="cart-wraper">
+                        <a style="text-decoration:none" class="header-cart" href="">
+                            <div class="cart-logo">
+                                <i style="color:black" class="fa-solid fa-cart-shopping fa-xl"></i>
+                            </div>
+                            <div class="cart-text">
+                                <span style="font-size: 13px; color: black">Giỏ hàng</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+        <div>
+            @RenderBody()
+        </div>
+    
+    <footer class="main-footer">
+        <div class="foot-container">
+            <div class="footer-ex-col">
+                <div class="main-if">
+                    <div class="f-container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 col-xs-12 widget-footer" id="widget-f1">
+                                <h4 style="padding-left:15px" class="title-footer">Về DEGREY</h4>
+                                <div class="content-footer block-collapse row" id="col-row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12" id="col-1">
+                                        <p style="margin:0 0 10px; color:white">
+                                            Cái tên Degrey được tạo ra rất ngẫu hứng, xuất phát từ “Chuỗi ngày u buồn về sự nghiệp, tương lai trong quá khứ của chính mình” – theo lời chia sẻ của Degrey’s founder.
+                                            <br />
+                                            <br />
+                                            <b style="font-weight:700">CÔNG TY TNHH DEGREY</b>
+                                            <br />
+                                            0315986019 0315986019 cấp ngày 31/10/2019 tại Sở kế hoạch đầu tư TPHCM
+                                        </p>
+                                        <div class="logo-footer hidden-xs">
+                                            <a href=""><img style="max-width:150px; opacity: 1; filter:blur(0); vertical-align:middle" src="https://file.hstatic.net/1000281824/file/dathongbao_22c990fc936b40e0a50a1b646f478284.png" /></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12" id="col-2">
+                                        <div class="addres-footer">
+                                            <ul style="list-style-type:none; margin-top:0">
+                                                <li class="contact-1" style="margin: 0 0 8px; color: white">
+                                                    <b style="font-weight:700">Địa chỉ </b>
+                                                    <br />
+                                                    <br />
+                                                    <b style="font-weight:700">
+                                                        -Sài Gòn
+                                                        <br />
+                                                    </b>
+                                                     43 Huỳnh Văn Bánh P.17 Q.Phú Nhuận
+                                                    <br />
+                                                     1041 Luỹ Bán Bích P.Tân Thành Q.Tân Phú 
+                                                    <br />
+                                                </li>
+                                                <li class="contact-2" style="margin: 0 0 8px; color: white">
+                                                    <b style="font-weight:700">Điện thoại:</b>
+                                                     0336311117
+                                                </li>
+                                                <li class="contact-4" style="margin: 0 0 8px; color: white">
+                                                    <b style="font-weight: 700">Email:</b>
+                                                     degrey.vn@gmail.com
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-right" style="display:flex">
+                                <div class="col-md-3 col-sm-12 col-xs-12 widget-footer" id="widget-f2">
+                                    <h4 class="title-footer">Hỗ trợ khách hàng</h4>
+                                    <div class="content-footer block-collapse" id="bl-col-1">
+                                        <ul class="footernav-link">
+                                            <li class="f-item"><a href="" style="text-decoration: none; color: white">Giới thiệu Degrey</a></li>
+                                            <li class="f-item"><a href="" style="text-decoration: none; color: white">Hệ thống cửa hàng</a></li>
+                                            <li class="f-item"><a href="" style="text-decoration: none; color: white">Hướng dẫn đặt hàng</a></li>
+                                            <li class="f-item"><a href="" style="text-decoration: none; color: white">Chính sách và quy định</a></li>
+                                            <li class="f-item"><a href="" style="text-decoration: none; color: white">Chính sách bảo mật</a></li>
+                                            <li class="f-item"><a href="" style="text-decoration: none; color: white">Thông tin sở hữu</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-12 col-xs-12 widget-footer" id="widget-f3">
+                                    <h4 class="title-footer">Chăm sóc khách hàng</h4>
+                                    <div class="content-footer block-collapse" id="bl-col-2">
+                                        <div class="footerInfo-hline">
+                                            <div class="box-icon">
+                                                <i class="fa-solid fa-phone fa-xl" style="font-size: 30px; color: white"></i>
+                                            </div>
+                                            <div class="box-content">
+                                                <span style="display: block; font-size: 24px; font-weight: 500; color: white">0336311117</span>
+                                                <u style="font-size: 16px; color: white">degrey.vn@gmail.com</u>
+                                            </div>
+                                        </div>
+                                        <h4 class="fter-title">Follow Us</h4>
+                                        <div class="footerNav-social-container" style="margin-top:10px">
+                                            <ul class="footerNav-social">
+                                                <li style="width:35px">
+                                                    <a href="">
+                                                        <i class="fa-brands fa-square-facebook fa-2xl" style="color:white"></i>
+                                                    </a>
+                                                </li>
+                                                <li style="width:35px">
+                                                    <a href="">
+                                                        <i class="fa-brands fa-square-twitter fa-2xl" style="color: white"></i>
+                                                    </a>
+                                                </li>
+                                                <li style="width:35px">
+                                                    <a href="">
+                                                        <i class="fa-brands fa-square-instagram fa-2xl" style="color: white"></i>
+                                                    </a>
+                                                </li>
+                                                <li style="width:35px">
+                                                    <a href="">
+                                                        <i class="fa-brands fa-square-google-plus fa-2xl" style="color: white"></i>
+                                                    </a>
+                                                </li>
+                                                <li style="width:35px">
+                                                    <a href="">
+                                                        <i class="fa-brands fa-square-youtube fa-2xl" style="color: white"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright text-center" style="font-size: 13px; padding: 12px 0; text-align: center;">
+                    <div class="cpy-container">
+                        <p style="margin: 0; color: white">
+                            Copyright © 2023 
+                            <a href="" style="text-decoration: none; color: white">  DEGREY VIETNAM</a>
+                            .
+                            <a target="_blank" href="https://www.haravan.com/" rel="noreferrer" style="text-decoration: none; color: white">Powered by Haravan</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
